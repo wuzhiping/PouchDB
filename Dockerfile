@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:lts-alpine
 
 RUN apk --update --no-cache add curl g++ make python && \
 	npm install --global --unsafe-perm=true pouchdb-server && \
